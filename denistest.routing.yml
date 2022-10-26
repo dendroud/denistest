@@ -1,0 +1,17 @@
+denistest.settings_form:
+  path: '/admin/config/message-settings'
+  defaults:
+    _title: 'denistest settings'
+    _form: 'Drupal\denistest\Form\SettingsForm'
+  requirements:
+    _permission: 'administer denistest configuration'
+      
+denistest.nodeclone:
+  path: '/node/{nid}/clone'
+  defaults:
+    _form: 'Drupal\denistest\Form\CloneForm'
+  requirements:
+    _permission: 'administer content'
+    node: \d+
+  parameters:
+    nid:   

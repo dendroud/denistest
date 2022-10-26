@@ -1,0 +1,6 @@
+denistest.settings_form:
+  title: Welcome Text
+  description: Configure Welcome Text.
+  parent: system.admin_config_system
+  route_name: denistest.settings_form
+  weight: 10
